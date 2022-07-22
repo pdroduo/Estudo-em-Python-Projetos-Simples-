@@ -1,0 +1,18 @@
+nome=input("Digite seu nome completo: ")
+idade=input("Digite sua idade: ")
+renda_mensal= input("Digite sua renda mensal: ")
+
+
+idade = int(idade)
+renda_mensal = float(renda_mensal)
+
+renda_mensal_minima = 1500 #para pegar o empréstimo, deve ter uma renda mensal de 1500
+idade_minima = 25 # para pegar o empréstimo deve ter 25 anos ou mais
+idade_maxima = 40 #40 anos o maximo
+
+if renda_mensal >= renda_mensal_minima:
+    print(f"{nome} está liberado para pegar o empréstimo.")
+elif idade >= idade_minima and idade <= idade_maxima:
+    print(f"{nome} está liberado para pegar o empréstimo")
+else:
+    print(f"{nome}, infelizmente o(a) senhor(a) não está dentro dos requisitos de nosso empréstimo")
