@@ -1,0 +1,15 @@
+periodo= input("Qual Período você estuda ? V(Vespertino), M(Matutino) ou N(Noturno): ")
+
+manha = "M"
+manha_1 = "m"
+vespertino  ="V"
+noturno = "N"
+
+if periodo == manha or periodo == manha_1:
+    print("Bom dia!")
+elif periodo == vespertino:
+    print("Boa Tarde!")
+elif periodo == noturno:
+    print("Boa noite!")
+else:
+    print("Valor Inválido")
