@@ -4,13 +4,13 @@ chances = 5
 
 while True:
     if chances <= 0:
-        print("Perdeu playboy")
+        print("Perdeu")
         break
 
     letra = input("Digite uma letra: ")
 
     if len(letra) > 1:
-        print("Não vale mais que uma letra seu fdp")
+        print("Não vale mais que uma letra")
         continue
 
     digitada.append(letra)
@@ -36,4 +36,4 @@ while True:
 
     if letra not in palavra_secreta:
         chances = chances - 1
-    print(f"VOce ainda tem {chances} chances ")
+    print(f"Voce ainda tem {chances} chances ")
