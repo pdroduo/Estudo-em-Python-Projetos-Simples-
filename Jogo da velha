@@ -1,0 +1,39 @@
+palavra_secreta = "Pedro"
+digitada = []
+chances = 5
+
+while True:
+    if chances <= 0:
+        print("Perdeu playboy")
+        break
+
+    letra = input("Digite uma letra: ")
+
+    if len(letra) > 1:
+        print("Não vale mais que uma letra seu fdp")
+        continue
+
+    digitada.append(letra)
+
+    if letra in palavra_secreta:
+        print("Letra certa!")
+    else:
+        print("Letra errada!")
+        digitada.pop()
+
+    secretotemp = ''
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in digitada:
+            secretotemp = secretotemp + letra_secreta
+        else:
+            secretotemp = secretotemp + '*'
+
+    if secretotemp == palavra_secreta:
+        print("Voce ganhou!")
+        break
+    else:
+        print(f'A palavra secreta está assim: {secretotemp}')
+
+    if letra not in palavra_secreta:
+        chances = chances - 1
+    print(f"VOce ainda tem {chances} chances ")
